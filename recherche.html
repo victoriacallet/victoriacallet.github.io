@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+<meta charset="utf-8">
+	<head>
+		<title>Recherche</title>
+		<!-- link to main stylesheet -->
+		<link rel="stylesheet" type="text/css" href="/css/main.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	</head>
+	<style>
+	html {height: 100%;
+	}
+	body {background: linear-gradient(180deg, rgba(1, 152, 117, 0.4), rgba(255,0,0,0));
+				background-attachment: fixed;}
+	footer {position: relative; bottom: 0; left: 0; right: 0;}
+	p1 { font-size: 20px;}
+	p2 { font-size: 18px;}
+	h0 { font-size: 40px;}
+	.menu {
+    display: flex;              /* Transformation en flexbox */
+    padding:0;                  /* Suppression des marges internes */
+    background-color: "none";     /* Ajout de la couleur d'arrière-plan */
+		justify-content: space-around;     /* Alignements des liens dans le menu */
+	}
+	.menu li {
+    list-style-type: none ;       /* Suppression des puces */
+	}
+	.menu a {
+    display:block;                /* Transformation en block */
+    min-width: 180px;             /* Largeur minimale des liens */
+		margin: 0.5rem;               /* Marges externes (1 valeurs = 4 directions) */
+		padding: 0.4rem 0;            /* Marges internes (2 valeurs = haut/bas et gauche/droite)*/
+		text-align: center;           /* Centrage du texte */
+		background-color: #f9e7bd;    /* Couleur d'arrière-plan */
+		color: #000000;               /* Couleur du texte */
+		text-decoration: none;        /* Suppression du soulignement */
+		border: 1px solid #000000;    /* Ajout d'une bordure */
+		border-radius: 4px;           /* Arrondis des bordures */
+	}
+  </style>
+
+	<body>
+		<font face="Trebuchet MS, sans-serif">
+
+			<ul class="menu" width=70%>
+				<li> <a href="index.html"> <p1>Accueil</p1> </a> </li>
+				<li> <a href="recherche.html"> <p1>Recherche</p1> </a></li>
+				<li> <a href="enseignement.html"> <p1>Enseignement</p1> </a></li>
+				<li> <a href="activites.html"> <p1>Autres activités</p1> </a></li>
+				<li> <a href="cv.html"> <p1>CV</p1> </a></li>
+			</ul>
+
+		<table width=100%>
+			<tr>
+
+				<td width=15% align="left" style="background-image: url('img/musique.jpg');"></td>
+
+				<td width=70% align="center">
+
+					<hr size="1" noshade="noshade"/>
+					<h1 align="center"> <b> Activités de recherche </b> </h1>
+					<hr size="1" noshade="noshade"/>
+
+					<table width="90%" align="center">
+			<tr>
+				<td>
+					<h2> <b> Domaines d'intérêts :</b></h2>
+					<div align="justify">
+						Je m'intéresse aux applications de l'<b>homologie persistante</b> et de l'<b>analyse topologique de données</b> dans le domaine de l'<b>analyse
+						musicale</b> et de la <b>classification automatique du style</b>.
+						Plus précisément, l'objectif de ma thèse est de définir, pour n'importe quel morceau de musique, une filtration de complexes simpliciaux
+						dont l'analyse des codes barres permettrait de reconnaître automatiquement le style du morceau.
+						<br> </br>
+						Je m'intéresse également aux travaux de Jason Yust et Emmanuel Amiot sur la <b>Transformée
+						de Fourier Discrète</b> et ses nombreuses applications à l'analyse musicale, mon but étant d'utiliser la DFT comme distance sur les mesures
+						d'un morceau.
+					</div>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<h2><b> Thèse : </b></h2>
+						<ul>
+							<li> <b> Modélisation topologique des structures et processus musicaux. </b> <a href="recherche/manuscrit_callet.pdf" style="text-decoration:none;"> (Manuscrit de thèse)</a>
+							<br> Sous la direction de <a href="https://irma-web1.math.unistra.fr/~guillot/" style="text-decoration: none;">Pierre Guillot
+							</a> et <a href="http://repmus.ircam.fr/moreno" style="text-decoration: none;"> Moreno Andreatta</a>.</li>
+						</ul>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<h2><b> Publications : </b></h2>
+						<ol>
+							<div align="justify">
+							<li> Callet, V. (2022). Persistent Homology on Musical Bars.
+								In: Montiel, M., Agustín-Aquino, O.A., Gómez, F., Kastine, J., Lluis-Puebla, E., Milam, B. (eds)
+								 Mathematics and Computation in Music. MCM 2022. Lecture Notes in Computer Science, vol 13267. Springer, Cham.
+								 <a href="https://doi.org/10.1007/978-3-031-07015-0_29"> https://doi.org/10.1007/978-3-031-07015-0_29</a>
+								 <br> <a href="recherche/articleMCM.pdf" style="text-decoration: none;"> Lien vers l'article. </a></li>
+							 </div>
+						</ol>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<h2><b> Exposés et communications : </b></h2>
+					Cette liste n'est pas complète : la liste complète des exposés que j'ai donnés est disponible sur mon <a href="cv.html" style="text-decoration:none;"> CV</a>.
+						<ul>
+							<div align="justify">
+								<li><b> La Transformée de Fourier Discrète au service de l'homologie persistante : applications à l'analyse musicale.</b>
+									<br><a href = "recherche/DFT+homologie_persistante.pdf" style="text-decoration:none;"> Exposé</a> donné dans le cadre d'un séminaire à l'<a href = "https://www.ircam.fr/"style="text-decoration:none;">IRCAM</a>
+									(Institut de Recherche et Coordination Acoustique/Musique), Centre Pompidou, Paris. <br>
+									Lien vers la vidéo de l'exposé : <a href = "https://www.youtube.com/watch?v=AGNBWqHqBMs&t=11s">https://www.youtube.com/watch?v=AGNBWqHqBMs&t=11s</a>.
+								</li>
+								<br>
+							<div align="justify">
+							<li> <b> Persistent homology on musical bars. </b>
+								<br> <a href="recherche/posterMCM2022.pdf" style="text-decoration: none;"> Poster</a> réalisé pour la 8ième édition du <a href="https://mcm2022.org/"style="text-decoration: none;">Mathematics and Computation in Music</a>,
+								conférence internationale, Atlanta, Géorgia (21-24/06/2022).
+							</li>
+							<br>
+							<li> <b> Analyse topologique des structures musicales via l'homologie persistante. </b>
+								<br> <a href="recherche/phBars.pdf" style="text-decoration: none;"> Exposé</a> réalisé pour un séminaire à l'<a href="https://www.irimas.uha.fr/"style="text-decoration: none;">IRIMAS</a> (Institut de Recherches en Informatique, Mathématiques, Automatique et Signal) de Mulhouse (12/05/2022).
+							</li>
+							<br>
+							<li> <b> Le Tonnetz, Histoire et Applications. </b>
+								<br> <a href="recherche/tonnetz.pdf" style="text-decoration: none;"> Exposé</a> réalisé pour le Collque international et Interdisciplinaire
+								<a href="recherche/colloqueMulhouse.pdf"style="text-decoration: none;">Les Sciences dans tous les sens</a> (25-26/03/2022).
+							</li>
+							<br>
+							<li> <b> Polynômes symétriques et tables de caractères du groupe symétrique. </b>
+								<br> <a href="recherche/symetrique.pdf" style="text-decoration:none;"> Exposé</a> réalié pour un séminaire doctorant à l'IRMA (24/06/2021).
+							</li>
+							<br>
+							<li> <b> Représentation simpliciale d'une partition de musique. </b>
+								<br> <a href="recherche/poster1A.pdf" style="text-decoration: none;"> Poster</a> réalisé pour la journée des doctorants de première année à l'IRMA (15/06/2021).
+							</li>
+							<br>
+							<li> <b> Sur la K-théorie : le groupe K1. </b>
+								<br> <i> Notes à venir </i> de l'exposé donné lors d'un groupe de travail sur la K-théorie organisé par des doctorants de l'IRMA (mai 2021).
+							</li>
+						</div>
+						</ul>
+			<br>
+
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<h2><b> Documents divers : </b></h2>
+						<ul>
+							<li> 2020 - Mémoire de Master 2, Mathématiques Fondamentales, sous la direction de <a href="https://irma-web1.math.unistra.fr/~guillot/" style="text-decoration: none;">Pierre Guillot</a>
+								<br><b> Suites spectrales et Homologie persistante </b> <a href="recherche/memoireM2.pdf" style="text-decoration: none;"> (manuscrit)</a>.
+							</li>
+							<br>
+							<li> 2019 - Mémoire de Master 2, Parcours Agrégation, sous la direction de <a href="https://irma-web1.math.unistra.fr/~guillot/" style="text-decoration: none;">Pierre Guillot</a>
+								<br><b> Fonctions symétriques et table de caractères du groupe symétrique </b> <a href="recherche/memoireM2agreg.pdf" style="text-decoration: none;"> (manuscrit)</a>.
+							</li>
+							<br>
+							<li> 2018 - Mémoire de Master 1, Mathématiques Fondamentales, sous la direction de <a href="https://irma.math.unistra.fr/~schappa/NSch/Home.html"style="text-decoration: none;">
+								Norbert Schappacher </a>
+								<br><b> Résolubilité par radicaux, comparaison de deux moments historiques : Gauss et Galois </b><a href="recherche/memoireM1.pdf" style="text-decoration: none;"> (manuscrit)</a>.
+							</li>
+						</ul>
+
+				</td>
+			</tr>
+		</table>
+
+		<table width="100%" align="center">
+			<tbody><tr>
+				<td align="left"><img src="img/logo_irma.png" name="irma" width="150"></td>
+				<td align="center"><img src="img/logo_univ.png" name="unistra" width="225"></td>
+				<td align="right"><img src="img/logo_cnrs.png" name="cnrs" width="125"></td>
+			</tr>
+		</tbody></table>
+
+		<td width=15%  align="right" style="background-image: url('img/triangles.png');"></td>
+		</tr>
+		</table>
+
+
+</font>
+</body>
+
+	<footer>
+		<p align="right">Dernière mise à jour : 3/06/22.</p>
+	</footer>
+
+</html>
