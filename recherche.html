@@ -1,194 +1,159 @@
 <!DOCTYPE html>
-<html lang="fr">
-<meta charset="utf-8">
-	<head>
-		<title>Recherche</title>
-		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	</head>
-	<style>
-	html {height: 100%;
-	}
-	body {background: linear-gradient(180deg, rgba(1, 152, 117, 0.4), rgba(255,0,0,0));
-				background-attachment: fixed;}
-	footer {position: relative; bottom: 0; left: 0; right: 0;}
-	p1 { font-size: 20px;}
-	p2 { font-size: 18px;}
-	h0 { font-size: 40px;}
-	.menu {
-    display: flex;              /* Transformation en flexbox */
-    padding:0;                  /* Suppression des marges internes */
-    background-color: "none";     /* Ajout de la couleur d'arrière-plan */
-		justify-content: space-around;     /* Alignements des liens dans le menu */
-	}
-	.menu li {
-    list-style-type: none ;       /* Suppression des puces */
-	}
-	.menu a {
-    display:block;                /* Transformation en block */
-    min-width: 180px;             /* Largeur minimale des liens */
-		margin: 0.5rem;               /* Marges externes (1 valeurs = 4 directions) */
-		padding: 0.4rem 0;            /* Marges internes (2 valeurs = haut/bas et gauche/droite)*/
-		text-align: center;           /* Centrage du texte */
-		background-color: #f9e7bd;    /* Couleur d'arrière-plan */
-		color: #000000;               /* Couleur du texte */
-		text-decoration: none;        /* Suppression du soulignement */
-		border: 1px solid #000000;    /* Ajout d'une bordure */
-		border-radius: 4px;           /* Arrondis des bordures */
-	}
-  </style>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="styles/common.css" />
+	<link rel="stylesheet" href="styles/with-lutz.css" />
+	<title>Page professionnelle de Victoria Callet-Feltz</title>
+<link rel="icon" type="image/x-icon" href="images/favicon.jpg">
+</head>
+<body>
+	<header>
+		<div id="header-title">
+			<h1>Page professionnelle de Victoria Callet-Feltz</h1>
+			<h2>Docteure et professeure agrégée de mathématiques</h2>
+		</div>
+		<ul>
+			<a href="index.html"><li class="active-link">Accueil</li></a>
+			<a href="enseignement.html"><li>Enseignement</li></a>
+			<a href="mediation.html"><li>Médiation</li></a>
+			<a href="recherche.html"><li>Recherche</li></a>
+		</ul>
+<!--<img id="logo-irimas" src="images/logo_nyuad.png" />-->
+	</header>
+	<div id="body">
+		<div id="lutz">
+		<center>
+			<img src="img/irma.jpg" style="width: 200px"><br><it>L'IRMA de Strasbourg</it>
+			<img src="img/these.jpg" style="width: 200px"><br><it>Ma thèse par Nightcafé</it>
+			<img src="img/matheor.jpeg" style="width: 200px">
+			<img src="img/matheor2.jpg" style="width: 325px"><br><it>MATHEOR DAYS 2023</it>
+			<img src="img/iticreaa.jpg" style="width: 250px">
+	</center>
 
-	<body>
-		<font face="Trebuchet MS, sans-serif">
+		</div>
 
-			<ul class="menu" width=70%>
-				<li> <a href="index.html"> <p1>Accueil</p1> </a> </li>
-				<li> <a href="recherche.html"> <p1>Recherche</p1> </a></li>
-				<li> <a href="enseignement.html"> <p1>Enseignement</p1> </a></li>
-				<li> <a href="activites.html"> <p1>Autres activités</p1> </a></li>
-				<li> <a href="cv.html"> <p1>CV</p1> </a></li>
-			</ul>
+		<div id="content-content">
 
-		<table width=100%>
-			<tr>
+			<h1>Thèse </h1>
 
-				<td width=15% align="left" style="background-image: url('img/musique.jpg');"></td>
+			<p>
+				J'ai soutenu ma thèse le 15 décembre 2023, et l'ai réalisée sous la direction de
+				<a href="http://repmus.ircam.fr/moreno" style="text-decoration: none;"> Moreno Andreatta</a> et
+				<a href="https://irma-web1.math.unistra.fr/~guillot/" style="text-decoration: none;">Pierre Guillot </a>.
+				<br>
+				Mes travaux de recherche ont porté sur l'<b>analyse topologique de données musicales</b>.
+				Plus précisément, je me suis intéressée aux applications de l'<b>homologie persistante</b> et de la <b>transformée de Fourier discrète</b>
+				dans le domaine de l'<b>analyse musicale</b> et de la <b>classification automatique du style</b>.
+				Un des objectifs de ma thèse a été de définir, pour n'importe quel morceau de musique, une filtration de complexes simpliciaux
+				dont l'analyse des codes barres permettrait de reconnaître automatiquement le style du morceau.
+				<br> </br>
+				Voici le <a href="recherche/manuscrit_callet.pdf" style="text-decoration:none;"> manuscrit</a>
+				<br></br>
 
-				<td width=70% align="center">
+				<h4><b>Base de données MIDI</b></h4>
+				Dans le cadre de ma thèse, j'ai regroupé un certains nombres de fichiers MIDI qui m'ont servi notamment à faire des tests de distance. J'ai décidé de regrouper
+				ces fichiers sur une page web, en les classant par styles (classique, pop, electro, etc.) et ainsi de les mettre à disposition de la communauté de chercheurs
+				en mathémusique, mais aussi à un public plus large. <br></br>
+				Le lien vers la base de données est le suivant : <a href="http://irma.math.unistra.fr/math-musique/">http://irma.math.unistra.fr/~math-musique</a>.
 
-					<hr size="1" noshade="noshade"/>
-					<h1 align="center"> <b> Activités de recherche </b> </h1>
-					<hr size="1" noshade="noshade"/>
+			</p>
 
-					<table width="90%" align="center">
-			<tr>
-				<td>
-					<h2> <b> Domaines d'intérêts :</b></h2>
-					<div align="justify">
-						Je m'intéresse aux applications de l'<b>homologie persistante</b> et de l'<b>analyse topologique de données</b> dans le domaine de l'<b>analyse
-						musicale</b> et de la <b>classification automatique du style</b>.
-						Plus précisément, l'objectif de ma thèse est de définir, pour n'importe quel morceau de musique, une filtration de complexes simpliciaux
-						dont l'analyse des codes barres permettrait de reconnaître automatiquement le style du morceau.
-						<br> </br>
-						Je m'intéresse également aux travaux de Jason Yust et Emmanuel Amiot sur la <b>Transformée
-						de Fourier Discrète</b> et ses nombreuses applications à l'analyse musicale, mon but étant d'utiliser la DFT comme distance sur les mesures
-						d'un morceau.
-					</div>
-				</td>
-			</tr>
+			<h1>Publications </h1>
 
-			<tr>
-				<td>
-					<h2><b> Thèse : </b></h2>
-						<ul>
-							<li> <b> Modélisation topologique des structures et processus musicaux. </b> <a href="recherche/manuscrit_callet.pdf" style="text-decoration:none;"> (Manuscrit de thèse)</a>
-							<br> Sous la direction de <a href="https://irma-web1.math.unistra.fr/~guillot/" style="text-decoration: none;">Pierre Guillot
-							</a> et <a href="http://repmus.ircam.fr/moreno" style="text-decoration: none;"> Moreno Andreatta</a>.</li>
-						</ul>
-				</td>
-			</tr>
-
-			<tr>
-				<td>
-					<h2><b> Publications : </b></h2>
-						<ol>
-							<div align="justify">
-							<li> Callet, V. (2022). Persistent Homology on Musical Bars.
-								In: Montiel, M., Agustín-Aquino, O.A., Gómez, F., Kastine, J., Lluis-Puebla, E., Milam, B. (eds)
-								 Mathematics and Computation in Music. MCM 2022. Lecture Notes in Computer Science, vol 13267. Springer, Cham.
-								 <a href="https://doi.org/10.1007/978-3-031-07015-0_29"> https://doi.org/10.1007/978-3-031-07015-0_29</a>
-								 <br> <a href="recherche/articleMCM.pdf" style="text-decoration: none;"> Lien vers l'article. </a></li>
-							 </div>
-						</ol>
-				</td>
-			</tr>
-
-			<tr>
-				<td>
-					<h2><b> Exposés et communications : </b></h2>
-					Cette liste n'est pas complète : la liste complète des exposés que j'ai donnés est disponible sur mon <a href="cv.html" style="text-decoration:none;"> CV</a>.
-						<ul>
-							<div align="justify">
-								<li><b> La Transformée de Fourier Discrète au service de l'homologie persistante : applications à l'analyse musicale.</b>
-									<br><a href = "recherche/DFT+homologie_persistante.pdf" style="text-decoration:none;"> Exposé</a> donné dans le cadre d'un séminaire à l'<a href = "https://www.ircam.fr/"style="text-decoration:none;">IRCAM</a>
-									(Institut de Recherche et Coordination Acoustique/Musique), Centre Pompidou, Paris. <br>
-									Lien vers la vidéo de l'exposé : <a href = "https://www.youtube.com/watch?v=AGNBWqHqBMs&t=11s">https://www.youtube.com/watch?v=AGNBWqHqBMs&t=11s</a>.
-								</li>
-								<br>
-							<div align="justify">
-							<li> <b> Persistent homology on musical bars. </b>
-								<br> <a href="recherche/posterMCM2022.pdf" style="text-decoration: none;"> Poster</a> réalisé pour la 8ième édition du <a href="https://mcm2022.org/"style="text-decoration: none;">Mathematics and Computation in Music</a>,
-								conférence internationale, Atlanta, Géorgia (21-24/06/2022).
-							</li>
-							<br>
-							<li> <b> Analyse topologique des structures musicales via l'homologie persistante. </b>
-								<br> <a href="recherche/phBars.pdf" style="text-decoration: none;"> Exposé</a> réalisé pour un séminaire à l'<a href="https://www.irimas.uha.fr/"style="text-decoration: none;">IRIMAS</a> (Institut de Recherches en Informatique, Mathématiques, Automatique et Signal) de Mulhouse (12/05/2022).
-							</li>
-							<br>
-							<li> <b> Le Tonnetz, Histoire et Applications. </b>
-								<br> <a href="recherche/tonnetz.pdf" style="text-decoration: none;"> Exposé</a> réalisé pour le Collque international et Interdisciplinaire
-								<a href="recherche/colloqueMulhouse.pdf"style="text-decoration: none;">Les Sciences dans tous les sens</a> (25-26/03/2022).
-							</li>
-							<br>
-							<li> <b> Polynômes symétriques et tables de caractères du groupe symétrique. </b>
-								<br> <a href="recherche/symetrique.pdf" style="text-decoration:none;"> Exposé</a> réalié pour un séminaire doctorant à l'IRMA (24/06/2021).
-							</li>
-							<br>
-							<li> <b> Représentation simpliciale d'une partition de musique. </b>
-								<br> <a href="recherche/poster1A.pdf" style="text-decoration: none;"> Poster</a> réalisé pour la journée des doctorants de première année à l'IRMA (15/06/2021).
-							</li>
-							<br>
-							<li> <b> Sur la K-théorie : le groupe K1. </b>
-								<br> <i> Notes à venir </i> de l'exposé donné lors d'un groupe de travail sur la K-théorie organisé par des doctorants de l'IRMA (mai 2021).
-							</li>
-						</div>
-						</ul>
-			<br>
-
-				</td>
-			</tr>
-
-			<tr>
-				<td>
-					<h2><b> Documents divers : </b></h2>
-						<ul>
-							<li> 2020 - Mémoire de Master 2, Mathématiques Fondamentales, sous la direction de <a href="https://irma-web1.math.unistra.fr/~guillot/" style="text-decoration: none;">Pierre Guillot</a>
-								<br><b> Suites spectrales et Homologie persistante </b> <a href="recherche/memoireM2.pdf" style="text-decoration: none;"> (manuscrit)</a>.
-							</li>
-							<br>
-							<li> 2019 - Mémoire de Master 2, Parcours Agrégation, sous la direction de <a href="https://irma-web1.math.unistra.fr/~guillot/" style="text-decoration: none;">Pierre Guillot</a>
-								<br><b> Fonctions symétriques et table de caractères du groupe symétrique </b> <a href="recherche/memoireM2agreg.pdf" style="text-decoration: none;"> (manuscrit)</a>.
-							</li>
-							<br>
-							<li> 2018 - Mémoire de Master 1, Mathématiques Fondamentales, sous la direction de <a href="https://irma.math.unistra.fr/~schappa/NSch/Home.html"style="text-decoration: none;">
-								Norbert Schappacher </a>
-								<br><b> Résolubilité par radicaux, comparaison de deux moments historiques : Gauss et Galois </b><a href="recherche/memoireM1.pdf" style="text-decoration: none;"> (manuscrit)</a>.
-							</li>
-						</ul>
-
-				</td>
-			</tr>
-		</table>
-
-		<table width="100%" align="center">
-			<tbody><tr>
-				<td align="left"><img src="img/logo_irma.png" name="irma" width="150"></td>
-				<td align="center"><img src="img/logo_univ.png" name="unistra" width="225"></td>
-				<td align="right"><img src="img/logo_cnrs.png" name="cnrs" width="125"></td>
-			</tr>
-		</tbody></table>
-
-		<td width=15%  align="right" style="background-image: url('img/triangles.png');"></td>
-		</tr>
-		</table>
+			<p>
+				<li> Callet, V. (2022). Persistent Homology on Musical Bars.
+					In: Montiel, M., Agustín-Aquino, O.A., Gómez, F., Kastine, J., Lluis-Puebla, E., Milam, B. (eds)
+					 Mathematics and Computation in Music. MCM 2022. Lecture Notes in Computer Science, vol 13267. Springer, Cham.
+					 <a href="https://doi.org/10.1007/978-3-031-07015-0_29"> https://doi.org/10.1007/978-3-031-07015-0_29</a>
+					 <br> <a href="recherche/articleMCM.pdf" style="text-decoration: none;"> Lien vers l'article. </a></li>
 
 
-</font>
+			</p>
+
+			<h1>Diffusion scientifique</h1>
+
+			<p>
+					<li><b> La Transformée de Fourier Discrète au service de l'homologie persistante : applications à l'analyse musicale.</b>
+						<br><a href = "recherche/DFT+homologie_persistante.pdf" style="text-decoration:none;"> Exposé</a> donné dans le cadre d'un séminaire à l'<a href = "https://www.ircam.fr/"style="text-decoration:none;">IRCAM</a>
+						(Institut de Recherche et Coordination Acoustique/Musique), Centre Pompidou, Paris. <br>
+						Lien vers la vidéo de l'exposé : <a href = "https://www.youtube.com/watch?v=AGNBWqHqBMs&t=11s">https://www.youtube.com/watch?v=AGNBWqHqBMs&t=11s</a>.
+					</li>
+					<br>
+				<li> <b> Persistent homology on musical bars. </b>
+					<br> <a href="recherche/posterMCM2022.pdf" style="text-decoration: none;"> Poster</a> réalisé pour la 8ième édition du <a href="https://mcm2022.org/"style="text-decoration: none;">Mathematics and Computation in Music</a>,
+					conférence internationale, Atlanta, Géorgia (21-24/06/2022).
+				</li>
+				<br>
+				<li> <b> Analyse topologique des structures musicales via l'homologie persistante. </b>
+					<br> <a href="recherche/phBars.pdf" style="text-decoration: none;"> Exposé</a> réalisé pour un séminaire à l'<a href="https://www.irimas.uha.fr/"style="text-decoration: none;">IRIMAS</a> (Institut de Recherches en Informatique, Mathématiques, Automatique et Signal) de Mulhouse (12/05/2022).
+				</li>
+				<br>
+				<li> <b> Le Tonnetz, Histoire et Applications. </b>
+					<br> <a href="recherche/tonnetz.pdf" style="text-decoration: none;"> Exposé</a> réalisé pour le Collque international et Interdisciplinaire
+					<a href="recherche/colloqueMulhouse.pdf"style="text-decoration: none;">Les Sciences dans tous les sens</a> (25-26/03/2022).
+				</li>
+				<br>
+				<li> <b> Polynômes symétriques et tables de caractères du groupe symétrique. </b>
+					<br> <a href="recherche/symetrique.pdf" style="text-decoration:none;"> Exposé</a> réalié pour un séminaire doctorant à l'IRMA (24/06/2021).
+				</li>
+				<br>
+				<li> <b> Représentation simpliciale d'une partition de musique. </b>
+					<br> <a href="recherche/poster1A.pdf" style="text-decoration: none;"> Poster</a> réalisé pour la journée des doctorants de première année à l'IRMA (15/06/2021).
+				</li>
+				<br>
+				<li> <b> Sur la K-théorie : le groupe K1. </b>
+					<br> <i> Notes à venir </i> de l'exposé donné lors d'un groupe de travail sur la K-théorie organisé par des doctorants de l'IRMA (mai 2021).
+				</li>
+
+			</p>
+
+
+			<h1>MAThEOR Days</h1>
+			<p>
+			</p>
+
+
+			<h1>Séminaire Mathémusique (IRMA-CREAA) </h1>
+
+			<p>
+			Avec <a href="https://morenoandreatta.com/" style="text-decoration:none;">Moreno Andreatta</a>, nous avons mis en place un <b>Séminaire Mathémusique</b>. Ce séminaire
+			sera mensuel, et débutera en octobre 2022. <br></br>
+			L'objectif de ce séminaire est de présenter les recherches en cours dans le domaine des mathématiques appliqués à la musique.
+			Il est destiné à un public de musicologues intéressés par l'approche mathématique et computationnelle de l'analyse musicale,
+			de mathématiciens curieux de découvrir ou de redécouvrir des applications de leur science à d'autres domaines,
+			mais également à un public plus large qui souhaiterait comprendre quels sont les liens que l'on peut explorer entre ces deux filières
+			(étudiants en licence, master, doctorants, etc.). Les thèmes de ce nouveau séminaire sont variés, et les travaux présentés porteront entre autre sur :
+			 le traitement symbolique de l'information musicale (approches algébriques, topologiques et catégorielles), la formalisation mathématique des théories musicales
+				(théories schenkeriennes, génératives, Set Theory, théories transformationnelles), les modèles mathématiques dans la chanson et l'improvisation,
+				les techniques et processus d'apprentissage des savoirs « mathémusicaux », l'analyse topologique des données
+				(appliquée à la modélisation automatique du style). Ce séminaire s'inscrit dans un axe de recherche qu'est la "<b>théorisation et modélisation
+				de l'acte artistique : approches mathématiques et computationnelles</b>".<br></br>
+
+				Plus d'informations sur le séminaire : <a href="https://irma-web1.math.unistra.fr/math-musique/seminaire.html">http://irma.math.unistra.fr/~math-musique/seminaire</a>.<br>
+				Les séminaires sont également visibles sur le site de l'IRMA, via le lien suivant : <a href="https://irma.math.unistra.fr/agenda.html">https://irma.math.unistra.fr/agenda.html</a>
+				ainsi que sur le site du CREAA, via le lien suivant : <a href="https://creaa.unistra.fr/evenements/seminaires/seminaire-interdisciplinaire-maths-et-musique-creaa/">https://creaa.unistra.fr/evenements/seminaires/seminaire-interdisciplinaire-maths-et-musique-creaa/</a>.<br>
+
+				Je suis <b>membre du CREEA</b> (Centre de Recherche d'Expérimentation sur l'Acte Artistique), plus précisément de la branche
+				"Théorisation et modélisation de l'acte artistique : approches mathématiques et computationnelles".
+				Cet axe de recherche, sous la responsabilité de Moreno ANDREATTA et de Xavier HASCHER, est une branche d'un programme de recherche plus général "Théories et Modèles".
+				<br></br>
+				Pour plus d'information sur le CREEA, rendez-vous sur la page <a href="https://creaa.unistra.fr/programmes-de-recherche/theories-et-modeles/theorisation-et-modelisation-de-lacte-artistique-approches-mathematiques-et-computationnelles/">
+				ITI CREEA - Théorie et modèles</a>.
+			</p>
+
+
+
+<table width="100%" align="center">
+	<tbody><tr>
+		<td align="left"><img src="img/logo_insa.png" style="width: 170px"/></td>
+		<td align="center"><img src="img/logo_unistra.png" style="width: 150px"/></td>
+		<td align="center"><img src="img/logo_fm.jpg" style="width: 170px"/></td>
+		<td align="right"><img src="img/logo_fs.jpg" style="width: 170px"/></td>
+	</tr>
+</tbody></table>
+
+
 </body>
-
-	<footer>
-		<p align="right">Dernière mise à jour : 3/06/22.</p>
-	</footer>
-
 </html>

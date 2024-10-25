@@ -1,136 +1,97 @@
 <!DOCTYPE html>
-<html lang="fr">
-<meta charset="utf-8">
-	<head>
-		<title>Enseignement</title>
-		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
-	</head>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="styles/common.css" />
+	<link rel="stylesheet" href="styles/with-lutz.css" />
+	<title>Page professionnelle de Victoria Callet-Feltz</title>
+<link rel="icon" type="image/x-icon" href="images/favicon.jpg">
+</head>
+<body>
+	<header>
+		<div id="header-title">
+			<h1>Page professionnelle de Victoria Callet-Feltz</h1>
+			<h2>Docteure et professeure agrégée de mathématiques</h2>
+		</div>
+		<ul>
+			<a href="index.html"><li class="active-link">Accueil</li></a>
+			<a href="enseignement.html"><li>Enseignement</li></a>
+			<a href="mediation.html"><li>Médiation</li></a>
+			<a href="recherche.html"><li>Recherche</li></a>
+		</ul>
+<!--<img id="logo-irimas" src="images/logo_nyuad.png" />-->
+	</header>
+	<div id="body">
+		<div id="lutz">
+			<center>
+				<img src="img/insa.jpg" style="width: 250px"><br><it>L'école INSA de Strasbourg</it>
+				<img src="img/rostand.jpg" style="width: 250px"><br>Le lycée Jean Rostand de Strasbourg
+				<img src="img/ufr.jpg" style="width: 250px"><br>L'UFR math-info de Strasbourg
+		</center>
+		</div>
 
-  <style>
-	html {height: 100%;
-	}
-	body {background: linear-gradient(180deg, rgba(1, 152, 117, 0.4), rgba(255,0,0,0));
-				background-attachment: fixed;
-				background-repeat: repeat;
-				min-height: 100%
-	}
-	footer {position: relative; bottom: 0; left: 0; right: 0;}
+		<div id="content-content">
 
-	p1 { font-size: 20px;}
-	p2 { font-size: 18px;}
-	h0 { font-size: 40px;}
-	.menu {
-    display: flex;              /* Transformation en flexbox */
-    padding:0;                  /* Suppression des marges internes */
-    background-color: "none";     /* Ajout de la couleur d'arrière-plan */
-		justify-content: space-around;     /* Alignements des liens dans le menu */
-	}
-	.menu li {
-    list-style-type: none ;       /* Suppression des puces */
-	}
-	.menu a {
-    display:block;                /* Transformation en block */
-    min-width: 180px;             /* Largeur minimale des liens */
-		margin: 0.5rem;               /* Marges externes (1 valeurs = 4 directions) */
-		padding: 0.4rem 0;            /* Marges internes (2 valeurs = haut/bas et gauche/droite)*/
-		text-align: center;           /* Centrage du texte */
-		background-color: #f9e7bd;    /* Couleur d'arrière-plan */
-		color: #000000;               /* Couleur du texte */
-		text-decoration: none;        /* Suppression du soulignement */
-		border: 1px solid #000000;    /* Ajout d'une bordure */
-		border-radius: 4px;           /* Arrondis des bordures */
-	}
-  </style>
+			<h1>Missions d'enseignements à l'INSA de Strasbourg</h1>
 
-	<body>
-		<font face="Trebuchet MS, sans-serif">
-      <ul class="menu" width=70%>
-				<li> <a href="index.html"> <p1>Accueil</p1> </a> </li>
-				<li> <a href="recherche.html"> <p1>Recherche</p1> </a></li>
-				<li> <a href="enseignement.html"> <p1>Enseignement</p1> </a></li>
-					<li> <a href="activites.html"> <p1>Autres activités</p1> </a></li>
-				<li> <a href="cv.html"> <p1>CV</p1> </a></li>
-			</ul>
+			<p><li> <b>2023, 2024</b> - <b>Mathématiques pour l'architecte et l'ingénierie</b>, Séries de Fourier, équation des ondes et de la chaleur
+				(<a href="cours/cours_ai3.pdf" style="text-decoration: none;">polycopié du cours et d'exercices</a>).</li>
 
-      <table width=100%>
-  			<tr>
+			<li> <b>2024</b> - <b>Outils mathématiques pour l'ingénieur·e</b>
+					(<a href="cours/exos_fip.pdf" style="text-decoration: none;">polycopié d'exercices</a>).</li>
+			</p>
 
-  				<td width=15% align="left" style="background-image: url('img/musique.jpg');" height=100% ></td>
 
-  				<td width=70% align="center">
-						<hr size="1" noshade="noshade"/>
-		        <h1 align="center"> <b> Activités d'enseignement </b> </h1>
-						<hr size="1" noshade="noshade"/>
-		<table width="90%" align="center">
+			<h1>Khôlles BCPST 1</h1>
 
-      <tr>
-				<td>
-					<h2> <b> Missions d'enseignements :</b></h2>
-						Je donne des cours intégrés et travaux dirigés dans le cadre de mon doctorat.
-				</td>
-			</tr>
+			<p>Quelques sujets d'exerices de khôlles :
+				<li><a href="cours/colles/logique.pdf" style="text-decoration: none;">Logique et raisonnement</a></li>
+				<li><a href="cours/colles/complexes.pdf" style="text-decoration: none;">Nombres complexes</a></li>
+				<li><a href="cours/colles/matrices.pdf" style="text-decoration: none;">Calcul matriciel, systèmes linéaires</a></li>
+				<li><a href="cours/colles/geometrie.pdf" style="text-decoration: none;">Géométrie</a></li>
+				<li><a href="cours/colles/algebre.pdf" style="text-decoration: none;">Espaces vectoriels, applications linéaires</a></li>
+				<li><a href="cours/colles/suites.pdf" style="text-decoration: none;">Suites</a></li>
+				<li><a href="cours/colles/trigonometrie.pdf" style="text-decoration: none;">Trigonométrie</a></li>
+				<li><a href="cours/colles/integration.pdf" style="text-decoration: none;">Calcul intégral</a></li>
+				<li><a href="cours/colles/differentielles.pdf" style="text-decoration: none;">Equations différentielles</a></li>
+				<li><a href="cours/colles/probabilites.pdf" style="text-decoration: none;">Probabilités et dénombrement</a></li>
 
-			<tr>
-				<td>
-          <ul>
-						<li> 2022 - Cours Intégrés -Algèbre Linéaire S2 pour la double licence Math-Eco.
-              <br> Le cours est disponible ici :
-              <br>
-              <ol>
-                <li> <a href="cours/algèbre_linéaireS2/chap1.pdf" style="text-decoration: none;"> Chapitre 1 - Espaces vectoriels. </a></li>
-                <li> <a href="cours/algèbre_linéaireS2/chap2.pdf" style="text-decoration: none;"> Chapitre 2 - Familles libres, familles génératrices. </a></li>
-                <li> <a href="cours/algèbre_linéaireS2/chap3.pdf" style="text-decoration: none;"> Chapitre 3 - Applications linéaires. </a></li>
-                <li> <a href="cours/algèbre_linéaireS2/chap4.pdf" style="text-decoration: none;"> Chapitre 4 - Matrices et applications linéaires. </a></li>
-              </ol>
-            </li>
-            <br>
-            <li> 2021 - TD - Mathématiques pour les Sciences de la Vie S2. </li>
-            <br>
-            <li> 2020 - Cours Intégrés - Mathématiques pour les Sciences S1 (option physique). </li>
-					</ul>
-				</td>
-			</tr>
 
-      <tr>
-				<td>
-					<h2> <b> Développement d'agrégations :</b></h2>
-						Quelques développements d'agrégations rédigés avec l'aide de <a href="https://irma.math.unistra.fr/~feltz/"
-						style="text-decoration: none;">Antoine Feltz</a> et <a href = "http://www.lmia.uha.fr/LMIA-Universite_de_Haute_Alsace/Site_QE/home.html"
-						style="text-decoration: none;">Quentin Ehret</a>. (à venir)
-						<br></br>
-						<br></br>
-						<br></br>
-						<br></br>
-						<br></br>
-						<br></br>
-						<br></br>
-						<br></br>
-				</td>
-			</tr>
+			</p>
 
-		</table>
+			<h1>Missions d'enseignements à l'UFR math-info de Strasbourg</h1>
 
-		<table width="100%" align="center">
-			<tbody><tr>
-				<td align="left"><img src="img/logo_irma.png" name="irma" width="150"></td>
-				<td align="center"><img src="img/logo_univ.png" name="unistra" width="225"></td>
-				<td align="right"><img src="img/logo_cnrs.png" name="cnrs" width="125"></td>
-			</tr>
-		</tbody></table>
+					<p><li> <b>2022, 2023</b> - Cours intégrés d'<b>algèbre linéaire</b> S2 pour la double licence Math-Eco
+						(<a href="cours/cours_algebre_lineaire.pdf" style="text-decoration: none;">polycopié du cours</a>).</li>
 
-    <td width=15%  align="right" style="background-image: url('img/triangles.png');"></td>
-  </tr>
-  </table>
+				            <li> <b>2021</b> - TD de Mathématiques pour les Sciences de la Vie S2. </li>
+
+				            <li> <b>2020</b> - Cours intégrés de Mathématiques pour les Sciences S1 (option physique). </li>
+
+			</p>
+
+
+			<h1> Développement d'agrégations </h1>
+			<p>
+										Quelques développements d'agrégations rédigés avec l'aide de <a href="https://irma.math.unistra.fr/~feltz/"
+										style="text-decoration: none;">Antoine Feltz</a> et <a href = "https://perso.matheor.com/quentin-ehret/index.html"
+										style="text-decoration: none;">Quentin Ehret</a>. (à venir)
+			</p>
+
+			<br></br>
 
 
 
+<table width="100%" align="center">
+	<tbody><tr>
+		<td align="left"><img src="img/logo_insa.png" style="width: 170px"/></td>
+		<td align="center"><img src="img/logo_unistra.png" style="width: 150px"/></td>
+		<td align="center"><img src="img/logo_fm.jpg" style="width: 170px"/></td>
+		<td align="right"><img src="img/logo_fs.jpg" style="width: 170px"/></td>
+	</tr>
+</tbody></table>
 
-</font>
+</div>
 </body>
-
-	<footer>
-		<p align="right">Dernière mise à jour : 3/06/22.</p>
-	</footer>
-
 </html>
